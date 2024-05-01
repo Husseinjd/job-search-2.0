@@ -1,0 +1,28 @@
+job_search:
+  description: |
+    find a list jobs that fulfill the following requirements: {query}
+  expected_output: A structured output as a valid json with the list of jobs found with all their information. Make sure that field names are kept the same.
+
+job_rating:
+  description: |
+    Using your tools to find the resume file information.  
+    Provide an additional rating on the jobs you received in context according to the Resume information. 
+    The rating is between 1-10 where 10 is the best fit. Every job should have a rating. 
+    Additionally add a rating_description field that explains the reasoning behind the number of rating in 1 or 2 sentences.
+    Make sure that all information about the jobs is also maintained in the output.
+  expected_output:  A structured output as a valid json of the list of jobs found and their respective ratings. Make sure that field names are kept the same.
+
+evaluate_company:
+  description: |
+    Using your tools find information about the company of jobs.
+    Information can include company culture reviews, company financial reports, and stock performance. 
+    provide an additional rating for the company in a field called company_rating.
+    The rating is between 1-10 where 10 is the best rating. Every job should have a rating.  
+    Additionally add a company_rating_description field that explains the reasoning behind the number of rating in 1 or 2 sentences.
+    Make sure that all information about the jobs is also maintained in the output.
+  expected_output:  A structured output as a valid json of the list of jobs found and their respective ratings, make sure to structure all information according this model {output_schema}
+
+structure_results:
+  description: |
+    Use all the context to structure the output as needed for the final reporting.
+  expected_output: A structured output as a valid json of the list of jobs found and their respective ratings. Make sure that the final output you provide is a valid json with schema {output_schema}
