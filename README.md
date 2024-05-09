@@ -30,9 +30,12 @@ To set up this project locally, follow these steps:
    ```bash
    pip install -r requirements.txt
 
-3. Set up the environment variables:
+3. Set up the environment variables within the .env file:
    ```bash
-   cp .env.example .env
+   SERPER_API_KEY=<ENTER KEY HERE>
+   OPENAI_API_VERSION =<ENTER KEY HERE>
+   AZURE_OPENAI_KEY=<ENTER KEY HERE>
+   AZURE_OPENAI_ENDPOINT =<ENTER KEY HERE>
 
 4. Run the application
    ```bash
