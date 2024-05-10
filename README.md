@@ -2,8 +2,7 @@
 
 ## Description
 
-Project full description available at: 
-
+Project full description available at:  [Job Search 2.0 Turbo](https://medium.com/towards-data-science/job-search-2-0-turbo-579e1bdb5177)
 
 ## Project Structure Overview
 
